@@ -1,0 +1,20 @@
+.helper-text-wrap{
+    @include bg--auto($dark, url(img/helper-bg@2x.png), cover, no-repeat, none);
+    background-position: center;
+    padding: 100px 0;
+    min-height: 350px;
+    .section-title{
+        text-transform: uppercase;
+        @include font-source-sans($middle, $light, $weight-normal, $line-middler, $main-font);
+    }
+    .section-text{
+        @include font-source-sans($regular, $light, $weight-middler, $line-normal, $helper-font);
+    }
+}
+@media screen and ( min-width: 900px ){
+    .helper-text-wrap{
+        h2, p, .section-title, .section-text{
+            max-width: 880px;
+        }
+    }
+}

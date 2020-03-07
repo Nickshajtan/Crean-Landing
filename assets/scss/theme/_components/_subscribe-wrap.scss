@@ -1,0 +1,44 @@
+.subscribe-wrap{
+    @include bg--auto($dark, url(img/subscribe-bg@2x.png), cover, no-repeat, none);
+    background-position: center;
+    min-height: 235px;
+    padding: 65px 0;
+    .section-title{
+        @include font-source-sans($middle, $light, $weight-normal, $line-middler, $main-font);
+        margin: 0;
+    }
+}
+form{
+    margin-top: 30px;
+    input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea{
+        padding: 8px 15px;
+        border-radius: 0;
+    }
+    input{
+        @include font-source-sans($regular, $dark, $weight-lighter, 1, $helper-font);
+        padding: 8px 15px;
+        max-width: 100%;
+        &:focus, &:hover, &:active{
+            outline: none;
+            box-shadow: none;
+        }
+        &[type=email]{
+            width: 330px;
+        }
+        &[type=submit]{
+            color: $light;
+            background-color: $helper;
+            border: 2px solid $helper;
+            padding: 12px 15px;
+            max-height: 39px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: .3s;
+            &:active, &:focus, &:hover{
+                color: $helper;
+                background-color: $light;
+                border: 2px solid $helper;
+            }
+        }
+    }
+}

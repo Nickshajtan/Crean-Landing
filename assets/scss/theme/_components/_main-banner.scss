@@ -1,0 +1,25 @@
+.main-banner{
+    @include bg--auto($dark, url(img/banner@2x.png), cover, no-repeat, none);
+    background-position: center;
+    min-height: 470px;
+    padding: 50px 0 30px 0;
+    h1{
+        padding-left: 12%;
+        span{
+            @include font-source-sans($big, $light, $weight-normal, 1, $main-font);
+            position: relative;
+            text-transform: capitalize;
+            margin-bottom: 80px;
+            &:before{
+                content: '';
+                display: block;
+                width: 9px;
+                height: 90%;
+                background-color: $helper;
+                position: absolute;
+                left: -18px;
+                bottom: 3px;
+            }
+        }
+    }
+}

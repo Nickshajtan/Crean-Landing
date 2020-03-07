@@ -1,0 +1,20 @@
+.testimonial-wrap{
+    @include bg--auto($light, url(img/wawe@2x.png), 90% 130%, no-repeat, none);
+    background-position: left bottom;
+    padding: 100px 0;
+    min-height: 350px;
+    .section-text{
+        @include font-source-sans($middle, $black, $weight-lighter, $line-middle, $helper-font);
+        padding: 20px 0;
+    }
+    .small-text{
+        @include font-source-sans($middler, $weight-normal, $line-normal, $main-font);
+    }
+}
+@media screen and ( min-width: 1200px ){
+    .testimonial-wrap{
+        h2, p, .section-title, .section-text{
+            max-width: 1124px;
+        }
+    }
+}

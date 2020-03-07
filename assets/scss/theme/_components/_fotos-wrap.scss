@@ -1,0 +1,17 @@
+.fotos-wrap{
+    padding: 0 0 60px 0;
+    picture, img{
+        width: 100%;
+        height: auto;
+    }
+    .w-50:first-child{
+        padding-right: 15px;
+    }
+    .w-50:last-child{
+        padding-left: 15px;
+    }
+    .img-text{
+        padding-top: 20px;
+        @include font-source-sans($middle - 5px, $weight-normal, 1, $main-font);
+    }
+}

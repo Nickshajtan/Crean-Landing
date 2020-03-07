@@ -1,0 +1,20 @@
+.masthead{
+    min-height: 68px;
+    background-color: $light;
+}
+.button{
+    @include font-source-sans($regular, $light, $weight-lighter, 1, $helper-font);
+    background-color: $helper;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 18px;
+    border: 2px solid $helper;
+    transition: .3s;
+    box-shadow: 0 10px 8px -10px #444;
+    &:hover, &:active, &:focus{
+        background-color: $light;
+        color: $helper;
+        text-decoration: none;
+        outline: none;
+    }
+}
