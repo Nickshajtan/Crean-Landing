@@ -1,0 +1,23 @@
+.logos-wrap{
+    .container{
+        flex-wrap: wrap;
+    }
+}
+@media screen and ( max-width: 1124px ){
+    .logos-wrap{
+        padding-bottom: 50px;
+    }
+}
+@media screen and ( max-width: 767px ){
+    .logos-wrap{
+        .container{
+            flex-direction: column;
+            img{
+                margin: 30px 0;
+                &:first-child, &:last-child{
+                    margin: 0;
+                } 
+            }
+        }
+    }
+}

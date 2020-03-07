@@ -15,3 +15,18 @@
         @include font-source-sans($middle - 5px, $weight-normal, 1, $main-font);
     }
 }
+@media screen and ( max-width: 767px ){
+    .fotos-wrap{
+        .container{
+            display: block;
+        }
+        .w-50{
+            &, &:first-child, &:last-child{
+                padding: 0;
+            }
+        }
+        .img-text{
+            padding-bottom: 20px;
+        }
+    }
+}

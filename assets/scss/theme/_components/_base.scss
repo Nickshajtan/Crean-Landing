@@ -89,6 +89,11 @@ p{
         max-width: 1492px;
     }
 }
+@media screen and ( max-width: 1024px ){
+    .container{
+        padding: 0 15px;
+    }
+}
 section{
     width: 100%;
     max-width: 100%;
@@ -96,4 +101,9 @@ section{
 }
 .w-50{
     width: 50%;
+}
+@media screen and ( max-width: 767px ){
+    .w-50{
+        width: 100%;
+    }
 }

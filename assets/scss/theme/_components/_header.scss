@@ -18,3 +18,17 @@
         outline: none;
     }
 }
+@media screen and ( max-width: 767px ){
+    .masthead{
+        min-height: 90px;
+        .container{
+            flex-direction: column;
+        }
+        .logo-wrap{
+            margin-bottom: 15px;
+        }
+    }
+    .button{
+        margin: 10px 0;
+    }
+}
